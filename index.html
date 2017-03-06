@@ -7,7 +7,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="app.js"></script>
 </head>
-<body ng-controller="superheroesCtrl as vm ">
-  {{"Hello" + " World"}}
+<body ng-controller="SuperHeroesCtrl as vm">
+  <h2>Superhero Phone Book</h2>
+  <div ng-repeat="superhero in vm.superheroes">
+    <p> {{$index +1}}. {{superhero.name}} <br />
+      {{superhero.number}} <br />
+      {{superhero.universe}} <br />
+      <img ng-src="{{superhero.image}}"/>
+    </p>
+
+  </div>
 </body>
 </html>

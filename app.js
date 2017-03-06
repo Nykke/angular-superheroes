@@ -13,9 +13,9 @@ let superheroData = [
 
 angular
 .module("superheroApp", [])
-.controller("superheroesCtrl", [ superheroController ]);
+.controller("SuperHeroesCtrl", [ SuperHeroesController ]);
 
-function superheroesController () {
+function SuperHeroesController () {
   this.superheroes = superheroData;
 
 }
