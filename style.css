@@ -1,6 +1,9 @@
+
 img {
   height: 220px;
   width: 200px;
+  padding: 5px;
+  border-radius: 40px;
 }
 
 .marvel {
@@ -12,4 +15,24 @@ img {
 }
 .dc {
   background-color: #00F;
+}
+div {
+  height: 300px;
+  width: 400px;
+}
+h2 {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 37px;
+  text-align: center;
+}
+p {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 26px;
+  color: #FFF
+
+}
+div > p{
+  text-align: center;
 }
