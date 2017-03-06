@@ -15,7 +15,8 @@
       {{$index +1}}. {{superhero.name}}
       {{superhero.number}}
       {{superhero.universe}}
-       <img ng-src="{{superhero.image}}">
+       <button ng-click="vm.viewImage[$index] = !vm.viewImage[$index]">Show Hero</button>
+       <img ng-src="{{superhero.image}}" ng-show="vm.viewImage[$index]">
     </p>
   </div>
 </body>
