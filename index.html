@@ -11,12 +11,12 @@
   <h2>Superhero Phone Book</h2>
   <input type="text" ng-model="search" placeholder="search"/>
   <div ng-repeat="superhero in vm.superheroes | filter:search:superhero.name">
-    <p> {{$index +1}}. {{superhero.name}} <br />
-      {{superhero.number}} <br />
-      {{superhero.universe}} <br />
-      <img ng-src="{{superhero.image}}"/>
+    <p ng-class="{ 'marvel': superhero.universe === 'Marvel Comics', 'dc': superhero.universe === 'DC Comics', 'independent': superhero.universe === 'Independent'}">
+      {{$index +1}}. {{superhero.name}}
+      {{superhero.number}}
+      {{superhero.universe}}
+       <img ng-src="{{superhero.image}}">
     </p>
-
   </div>
 </body>
 </html>

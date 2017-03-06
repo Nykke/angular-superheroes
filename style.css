@@ -1,4 +1,15 @@
 img {
-  height: 100px;
-  width: 80px;
+  height: 220px;
+  width: 200px;
+}
+
+.marvel {
+  background-color: #FF0000;
+}
+
+.independent {
+  background-color: #8B4513;
+}
+.dc {
+  background-color: #00F;
 }
